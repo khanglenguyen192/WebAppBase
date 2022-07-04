@@ -1,0 +1,56 @@
+﻿@model WebApp.Models.LoginModel
+
+@{
+    Layout = null;
+}
+
+
+@section styles{
+    <link href="~/Content/Home/Login.css" rel="stylesheet" />
+}
+
+@using (Html.BeginForm("Login", "Home", FormMethod.Post))
+{
+    <div class="form-wrap container wrap-login wrapFormClass">
+        <div class="table">
+            <div class="row">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12 has-feedback">
+                            <p>UserName</p>
+                            @Html.TextBoxFor(p => p.Email, new { @type = "text", @id = "email", @data_key = "UserEmailAddress" })
+                            @Html.ValidationMessageFor(p => p.Email, null, new { @Class = "font-red" })
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 has-feedback">
+                            <p>Password</p>
+                            @Html.TextBoxFor(p => p.PassCode, new { @type = "password", @data_key = "Passcode" })
+                            @Html.ValidationMessageFor(p => p.PassCode, null, new { @Class = "font-red" })
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 has-feedback">
+                            <p>Login Using Phone Number</p>
+                            @Html.CheckBoxFor(p => p.IsUsingPhone)
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <button id="submitForm">
+                                Login
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@section scripts{
+    <script src="~/Scripts/Home/Login.js"></script>
+}

@@ -1,0 +1,28 @@
+﻿@{
+    Layout = null;
+}
+
+@using (Html.BeginForm("Logout", "Home", FormMethod.Post))
+{
+    <div class="form-wrap container wrap-login wrapFormClass">
+        <div class="table">
+            <div class="row">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12 has-feedback">
+                            <h2> This is Home Page</h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <button id="submitForm">
+                                Log Out
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}

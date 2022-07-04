@@ -1,0 +1,8 @@
+﻿WebApp.Common/bin
+WebApp.Common/obj
+WebApp.Data/bin
+WebApp.Data/obj
+WebApp.DBContext/bin
+WebApp.Service/bin
+WebApp.Service/obj
+WebApp.DBContext/obj

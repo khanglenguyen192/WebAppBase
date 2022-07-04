@@ -1,0 +1,85 @@
+﻿.wrap-login {
+    background-color: red;
+}
+
+    .wrap-login * {
+        outline: none;
+    }
+
+    .wrap-login #title {
+        /*background-color: black;color: white;*/
+    }
+
+    .wrap-login p.text-label {
+        margin-top: 10px;
+        color: #288AE6;
+    }
+
+#submitForm {
+    display: block;
+    margin: 20px auto 0;
+    font-size: 22px;
+    -ms-border-radius: 5px;
+    border-radius: 21px;
+    background-color: #495f7f;
+    border: 1px solid #bababa;
+    color: #fff;
+    padding: 5px 35px;
+}
+
+.form-wrap .table a#submitButton {
+    display: block;
+    margin: 20px auto 0;
+    /*font-size: 22px;*/
+    -ms-border-radius: 5px;
+    border-radius: 8px;
+    color: #fff;
+    width: 100px;
+    padding-top: 40px;
+    background-color: #5887f5;
+    border: none;
+}
+
+.font-red {
+    color: red;
+}
+
+.has-feedback {
+    position: relative;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #6D808E inset;
+    -webkit-text-fill-color: #E6F3FB !important;
+}
+
+.multilanguage-icon {
+    padding-left: 4px;
+}
+
+.form-wrap .table .has-feedback input {
+    border-radius: 5px;
+    padding-left: 30px;
+}
+
+.has-feedback .form-control-feedback {
+    top: 9px;
+    left: 23px;
+    color: #545454;
+    font-weight: bold;
+    position: absolute;
+}
+
+.has-feedback .with-description.form-control-feedback {
+    top: 22px;
+    left: 13px;
+    color: #E6F3FB;
+}
+
+.has-feedback + .has-feedback {
+    margin-top: 20px;
+}
+
+.has-feedback:first-of-type {
+    margin-top: 10px;
+}
